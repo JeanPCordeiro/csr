@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::middleware('auth')->group(function () {
-  Route::get('/', 'TaskController@index')->name('home');
+  Route::get('/', 'TaskController@index')->name('tasks');
   Route::resource('tasks', 'TaskController');
 });
 
